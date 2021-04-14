@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Mahavir's profile</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $('document').ready(function(){
+            $('.btn').click(function(){
+                $('#cont').hide();
+                $('#contact').show();
+            });
+            $('#contact').click(function(){
+                $('#cont').show();
+                $('#contact').hide();
+            });
+        });
+         $('document').ready(function(){
+            $('.btn2').click(function(){
+                $('#email').hide();
+                $('#emailid').show();
+            });
+            $('#emailid').click(function(){
+                $('#email').show();
+                $('#emailid').hide();
+            });
+            $('#submit').click(function(){
+                swal("your data has saved");
+                $('.container').find('input').val('');
+            });
+        });
+    </script>
+</head>
+
+<style>
+    /* css reset */
+    body{
+        margin: 0px;
+        padding: 10px  20px;
+        background: url('images/99.jpeg') no-repeat ;
+        background-size: 100% 120%;
+        /*width: 120%;    */
+    }
+    .left
+    {
+        display: inline-block;
+        
+        color: indigo;
+        
+        position: absolute;
+        left: 5px;
+        top: 10px;
+    }
+    .left img{
+          width: 74px;
+          border-radius: 37px;
+        
+    }
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+    .mid
+    {
+        border-color: solid red;
+       
+        
+        border-left-width: 60px;
+
+    }
+    .mid div{
+         line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+    .right{
+        display: inline-block;
+border: 2 px solid green;
+position: absolute;
+
+right: 60px;
+top: 20px;
+    }
+    .navbar{
+        display: inline-block;
+
+}
+.navbar li
+{
+    display: inline-block;
+    font-size: 25px;
+}
+  .navbar li a
+  {
+      color: white;
+      text-decoration: none;
+      padding: 34px 23px;
+  }
+  .navbar li a :hover, .navbar li a.active
+  {
+      text-decoration: underline;
+      color: rgb(202, 33, 33);
+  }
+  .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: green;
+    }
+    .btn2 {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn2:hover{
+        background-color: green;
+    }
+    .btn3 {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn3:hover{
+        background-color: green;
+    }
+    .container
+    {
+        border: 2px;
+        margin: 106 80;
+        padding: 75;
+        width: 33%;
+        border-radius: 28 px;
+
+    }
+    .form-group input
+    {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+
+</style>
+<body>
+<header class="header">
+    <div class="left"> 
+        <img src="images/headerimg.jpeg" alt="">
+        </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li> <a href="home.html" class="active"> HOME  </a></li>
+            <li> <a href="about.html"class="active"> ABOUT US  </a></li>
+            
+            <li> <a href="resume.html"class="active"> PROFILE  </a></li>
+            
+            
+           
+        </ul>
+    </div>
+    <div class="right"> 
+        <button class="btn" id="cont">contact no.</button>
+        <button class="btn" id="contact" style="display:none;">9592680923</button>
+        <button class="btn2" id="email" >email id</button>
+        <button class="btn2" id="emailid" style="display: none;" > mahavirgoyal32@gmail.com</button>
+           <a href="https://www.linkedin.com/in/mahavir-goyal-2b6866157" class="btn3"> linkedian  </a>
+    </div>
+</header>
+<div class="container">
+    <h1 style="color:red;">If you want keep in contact with me and for more updates in this website then Please fill this form</h1>
+    
+        <div class="form-group">
+            <input type="text" name="" placeholder="enter your name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="enter your contact no.">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="enter your email id">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="enter your age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="your occupation">
+        </div>
+        <button class="btn" id="submit">Submit</button>
+    
+</div>
+</body>
+</html>
